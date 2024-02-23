@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PX Peak</title>
+    <link rel="stylesheet" href="./assets/css/px.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div class="divster">
+        <h1 class="jakarta-800">Panamax Ships</h1>
+        <p class="plus-jakarta-400">
+          A canal is a waterway with locks and the locks elevate 
+          and lower vessels as they traverse level stretches  
+          of the canal’s shipping lane. 
+        </p>
+        <p class="next plus-jakarta-400">
+          The Panama Canal is an artificial 51-mile waterway in Panama that connects the Atlantic Ocean with the Pacific Ocean, cutting across the Isthmus of Panama, and is a conduit for maritime trade. Canal locks at each end lift ships up to Gatun Lake, an artificial freshwater lake 26 meters (85 ft) above sea level, created by damming up the Chagres River and Lake Alajuela to reduce the amount of excavation work required for the canal, and then lower the ships at the other end.
+        </p>
+        <div class="vector-size" id="blinker">
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 24 24"
+            style="enable-background: new 0 0 24 24"
+            xml:space="preserve"
+          >
+            <path
+              class="vector-color"
+              id="blinker"
+              d="M12,19l-6-6l1.4-1.4l4.6,4.6l4.6-4.6L18,13L12,19z M12,13L6,7l1.4-1.4l4.6,4.6l4.6-4.6L18,7L12,13z"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="diva">
+        <div class="plus-jakarta-400"><p class="subheading">Audio Narration</p></div>
+      <div class="sound">
+        <audio controls>
+          <source src="./assets/audio/Panamax_p.mp3" type="audio/mp3" />
+          <source src="./assets/audio/Panamax_p.ogg" type="audio/ogg" />
+        </audio>
+      </div>
+      <div class="gltf-container">
+        <model-viewer
+          src="./assets/gltf/gltf_PX_initial.glb"
+          shadow-intensity="3"
+          camera-controls
+          autoplay="true"
+          environment-image="assets/gltf/rosendal_mountain_midmorning_2k.hdr"
+        ></model-viewer>
+      </div>
+    </section>
+  </body>
+</html>
